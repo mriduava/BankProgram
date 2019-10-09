@@ -13,6 +13,7 @@ public class FileUtility {
     public static void writeBooksList(String fileName, List<View> booksList){
         ObjectOutputStream objectOutputStream = null;
         FileOutputStream fileOutputStream = null;
+
         try{
             fileOutputStream = new FileOutputStream(fileName, false);
             objectOutputStream = new ObjectOutputStream(fileOutputStream);
